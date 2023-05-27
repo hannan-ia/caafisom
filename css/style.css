@@ -277,6 +277,40 @@ h6,
     color: #FFFFFF !important;
 }
 
+/*** Marquee Sponsors Reel ***/
+  .marquee {
+       overflow: hidden; 
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: scrolling 40s linear infinite;
+  }
+  
+  .marquee-item {
+    flex: 0 0 16vw;
+    margin: 0 1vw;
+    /*   flex: 0 0 20vw; */
+    /*   margin: 0 2vw; */
+  }
+  
+  .marquee-item img {
+    display: block;
+    width: 100%;
+    /*   padding: 0 20px; */
+  }
+  
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translatex(-500vw);
+    }
+  }
+
 
 /*** Project ***/
 .project-item,
